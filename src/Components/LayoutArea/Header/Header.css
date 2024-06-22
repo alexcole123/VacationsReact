@@ -1,0 +1,17 @@
+.Header {
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+
+}
+
+
+.split-color-text {
+    font-size: 24px;
+    background: linear-gradient(to right, purple 30%, pink 50%, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }

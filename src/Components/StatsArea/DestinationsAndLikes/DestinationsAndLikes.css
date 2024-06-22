@@ -1,0 +1,17 @@
+
+.DestinationsAndLikes {
+    padding: 20px;
+}
+
+.even-row {
+    background-color: #f5f5f5;
+}
+
+.odd-row {
+    background-color: #ffffff;
+}
+
+.table-header th {
+    background-color: black;
+    color: white; /* Set the color for table header cells */
+}

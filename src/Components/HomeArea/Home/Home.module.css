@@ -1,0 +1,13 @@
+.container > img {
+    margin-top: 10px;	
+    height: 350px;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.container > p{
+    text-align: left;
+    margin-left: 2px;
+}

@@ -1,0 +1,93 @@
+.Menu {
+	display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.Menu .active {
+    font-weight: bold;
+    font-family: Arial;
+    color: green;
+}
+
+
+.Menu * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+.Menu body {
+    font-family: sans-serif;
+  }
+  
+.Menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  
+.Menu li {
+    list-style: none;
+  }
+  
+.Menu a {
+    position: relative;
+    display: block;
+    margin: 1%;
+    padding: 1%;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+.Menu a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+.Menu a:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  
+.Menu a:hover {
+    color: #fff;
+  }
+  
+.Menu a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  
+.Menu a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  
